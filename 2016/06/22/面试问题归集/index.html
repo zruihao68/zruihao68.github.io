@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+    <!-- 
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.3.0 -->
+
+    <!-- Title -->
+    
+    <title>
+        
+            面试问题归集 | 
+        
+        zrui Blog
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" sizes="192x192" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!-- Meta & Info -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0097A7">
+    <meta name="author" content="zrui">
+    <meta name="description" content="总有人要赢的，那个人为什么不能是我呢？">
+    <meta name="keywords" content="null,java">
+
+    <!--iOS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-title" content="Title">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="480">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="zrui Blog">
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://yoursite.com">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="面试问题归集 | zrui Blog">
+    <meta property="og:description" content="总有人要赢的，那个人为什么不能是我呢？">
+    <meta property="og:article:tag" content="java"> 
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="/css/material.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+    <!-- Config CSS -->
+
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/queue.js"></script>
+
+    <!-- UC Browser Compatible -->
+    <script>
+        var agent = navigator.userAgent.toLowerCase();
+        if(agent.indexOf('ucbrowser')>0) {
+            document.write("<link rel=\"stylesheet\" href=\"/css/uc.css\">");
+            alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+        }
+    </script>
+
+    
+
+    
+
+    <!-- Bing Background -->
+    
+
+    <!-- Custom Head -->
+    
+</head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-springMVC如何做表单数据较验？有什么标准？Path-variable中的数据如何做校验"><span class="post-toc-number">1.</span> <span class="post-toc-text">1,springMVC如何做表单数据较验？有什么标准？Path variable中的数据如何做校验</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-如何在mybaits-的mapper文件中定义一个复合对象"><span class="post-toc-number">2.</span> <span class="post-toc-text">2.如何在mybaits 的mapper文件中定义一个复合对象</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#3-maven的snapshot版有何作用？如何强制更新对snapshot版本的依赖？"><span class="post-toc-number">3.</span> <span class="post-toc-text">3.maven的snapshot版有何作用？如何强制更新对snapshot版本的依赖？</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#4-tomcat发生无法响应http请求，控制台无输出的情况，可能发生什么问题，如何诊断"><span class="post-toc-number">4.</span> <span class="post-toc-text">4.tomcat发生无法响应http请求，控制台无输出的情况，可能发生什么问题，如何诊断</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#5-service层和dao层的作用分别是什么？"><span class="post-toc-number">5.</span> <span class="post-toc-text">5.service层和dao层的作用分别是什么？</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#6-把spring-mybatis-springMvc整合在一起，主要有那些配置文件，罗列主要配置内容？"><span class="post-toc-number">6.</span> <span class="post-toc-text">6.把spring + mybatis + springMvc整合在一起，主要有那些配置文件，罗列主要配置内容？</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#7-jquery-selector-“p-gt-a”-“p-a”-“p-a”-“p-a”-四者区别是什么"><span class="post-toc-number">7.</span> <span class="post-toc-text">7.jquery selector $(“p > a”), $(“p a”), $(“p + a”), $(“p ~ a”)四者区别是什么</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#8-http-status-301-302-分别表示什么，用servlet如何分别返回"><span class="post-toc-number">8.</span> <span class="post-toc-text">8.http status 301 302 分别表示什么，用servlet如何分别返回</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#8-cat-1-egrep-t-t-tail-1-xargs-sed-‘s-s-1-‘-gt-dev-null-2-gt-amp-1解释下下这条命令的含义"><span class="post-toc-number">9.</span> <span class="post-toc-text">8.cat $(($$+1)) | egrep ^t.*\..*t$ | tail -1 | xargs sed ‘s/^/s-1/‘ > /dev/null 2>&1解释下下这条命令的含义</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#9-关系数据多对多的实体关系如何设计，写一个-用户-角色-权限的模型，用DDL写出表结构并写出一条sql了显示所有用户的角色和权限"><span class="post-toc-number">10.</span> <span class="post-toc-text">9.关系数据多对多的实体关系如何设计，写一个 用户-角色-权限的模型，用DDL写出表结构并写出一条sql了显示所有用户的角色和权限</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#10-每天吃前一天的一半加一个吃到第十天还剩一个。第一天最开始有多少个？用程序实现"><span class="post-toc-number">11.</span> <span class="post-toc-text">10.每天吃前一天的一半加一个吃到第十天还剩一个。第一天最开始有多少个？用程序实现</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#11-一个只有-name的表team-name分别为-a-b-c-d-四个球队-任意两个球队打比赛用-sql语言表示分别列出来对阵情况？"><span class="post-toc-number">12.</span> <span class="post-toc-text">11.一个只有 name的表team,name分别为 a b c d 四个球队 任意两个球队打比赛用 sql语言表示分别列出来对阵情况？</span></a></li></ol>
+
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script>
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').css('background-image', 'url(' + '/img/random/material-' + randomNum + '.png' + ')');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                面试问题归集
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/v.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>zrui</strong>
+        <span>6月 22, 2016</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/java/">java</a>
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=面试问题归集&url=http://yoursite.com//2016/06/22/面试问题归集/index.html&pic=&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=面试问题归集&url=http://yoursite.com//2016/06/22/面试问题归集/index.html&via=zrui" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com//2016/06/22/面试问题归集/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com//2016/06/22/面试问题归集/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+        <a class="post_share-link" href="https://telegram.me/share/url?url=http://yoursite.com//2016/06/22/面试问题归集/index.html&text=面试问题归集" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Telegram
+            </li>
+        </a>
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h2 id="1-springMVC如何做表单数据较验？有什么标准？Path-variable中的数据如何做校验"><a href="#1-springMVC如何做表单数据较验？有什么标准？Path-variable中的数据如何做校验" class="headerlink" title="1,springMVC如何做表单数据较验？有什么标准？Path variable中的数据如何做校验"></a>1,springMVC如何做表单数据较验？有什么标准？Path variable中的数据如何做校验</h2><p>答：使用JSR-303验证，Path variable中的数据对象也可以用JSR-303。</p>
+<h2 id="2-如何在mybaits-的mapper文件中定义一个复合对象"><a href="#2-如何在mybaits-的mapper文件中定义一个复合对象" class="headerlink" title="2.如何在mybaits 的mapper文件中定义一个复合对象"></a>2.如何在mybaits 的mapper文件中定义一个复合对象</h2><p>答：在resultMap中申明association属性中编写对应关系。<br><a id="more"></a></p>
+<h2 id="3-maven的snapshot版有何作用？如何强制更新对snapshot版本的依赖？"><a href="#3-maven的snapshot版有何作用？如何强制更新对snapshot版本的依赖？" class="headerlink" title="3.maven的snapshot版有何作用？如何强制更新对snapshot版本的依赖？"></a>3.maven的snapshot版有何作用？如何强制更新对snapshot版本的依赖？</h2><p>snapshot版本代表不稳定、尚处于开发中的版本，在开发阶段避免服务器上是一堆的release版本<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.quinn<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span>  </div><div class="line"><span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>accounts<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span>  </div><div class="line"><span class="tag">&lt;<span class="name">version</span>&gt;</span>0.0.1-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span>  </div><div class="line"><span class="tag">&lt;<span class="name">packaging</span>&gt;</span>jar<span class="tag">&lt;/<span class="name">packaging</span>&gt;</span>  </div><div class="line"></div><div class="line"><span class="comment">&lt;!-- 设置实时更新--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">snapshots</span>&gt;</span>  </div><div class="line">	<span class="tag">&lt;<span class="name">enabled</span>&gt;</span>true<span class="tag">&lt;/<span class="name">enabled</span>&gt;</span>  </div><div class="line">	<span class="tag">&lt;<span class="name">updatePolicy</span>&gt;</span>always<span class="tag">&lt;/<span class="name">updatePolicy</span>&gt;</span>  </div><div class="line">	<span class="tag">&lt;<span class="name">checksumPolicy</span>&gt;</span>warn<span class="tag">&lt;/<span class="name">checksumPolicy</span>&gt;</span>  </div><div class="line"> <span class="tag">&lt;/<span class="name">snapshots</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<h2 id="4-tomcat发生无法响应http请求，控制台无输出的情况，可能发生什么问题，如何诊断"><a href="#4-tomcat发生无法响应http请求，控制台无输出的情况，可能发生什么问题，如何诊断" class="headerlink" title="4.tomcat发生无法响应http请求，控制台无输出的情况，可能发生什么问题，如何诊断"></a>4.tomcat发生无法响应http请求，控制台无输出的情况，可能发生什么问题，如何诊断</h2><p>  没怎么遇到过，原来公司正式环境用的weblogic,第一反应是打开浏览器开发工具网络监听查看返回结果</p>
+<h2 id="5-service层和dao层的作用分别是什么？"><a href="#5-service层和dao层的作用分别是什么？" class="headerlink" title="5.service层和dao层的作用分别是什么？"></a>5.service层和dao层的作用分别是什么？</h2><p>答：二者都属于mvc架构中的m层，service层负责业务逻辑处理，dao层负责持久化数据。</p>
+<h2 id="6-把spring-mybatis-springMvc整合在一起，主要有那些配置文件，罗列主要配置内容？"><a href="#6-把spring-mybatis-springMvc整合在一起，主要有那些配置文件，罗列主要配置内容？" class="headerlink" title="6.把spring + mybatis + springMvc整合在一起，主要有那些配置文件，罗列主要配置内容？"></a>6.把spring + mybatis + springMvc整合在一起，主要有那些配置文件，罗列主要配置内容？</h2><p>答：主要文件有spring与mybatis的配置文件和springMvc的配置文件,以及web.xml文件，<br>spring与mybatis的配置文件:applicationContext.xml:<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"> <span class="comment">&lt;!--连接池配置 使用的是C3P0 --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"dataSource"</span> <span class="attr">class</span>=<span class="string">"com.mchange.v2.c3p0.ComboPooledDataSource"</span> &gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"jdbcUrl"</span> <span class="attr">value</span>=<span class="string">"$&#123;jdbc.jdbcUrl&#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"user"</span> <span class="attr">value</span>=<span class="string">"$&#123;jdbc.user&#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"password"</span> <span class="attr">value</span>=<span class="string">"$&#123;jdbc.password&#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"driverClass"</span> <span class="attr">value</span>=<span class="string">"$&#123;jdbc.driverClass&#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line">	<span class="comment">&lt;!-- 最大链接数 --&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"maxPoolSize"</span> <span class="attr">value</span>=<span class="string">"$&#123;jdbc.maxPoolSize&#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line">	<span class="comment">&lt;!-- 初始化连接数 --&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"initialPoolSize"</span> <span class="attr">value</span>=<span class="string">"$&#123;jdbc.initPoolSize&#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></div><div class="line"></div><div class="line"> <span class="comment">&lt;!--- sqlSessionFactory 的配置 --&gt;</span></div><div class="line"> <span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"sqlSessionFactory"</span> <span class="attr">class</span>=<span class="string">"org.mybatis.spring.SqlSessionFactoryBean"</span>&gt;</span></div><div class="line">     <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"dataSource"</span> <span class="attr">ref</span>=<span class="string">"dataSource"</span> /&gt;</span></div><div class="line">     <span class="comment">&lt;!-- 实体类路径--&gt;</span></div><div class="line">     <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"typeAliasesPackage"</span> <span class="attr">value</span>=<span class="string">"实体类包名"</span> /&gt;</span></div><div class="line">     <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"mapperLocations"</span> <span class="attr">value</span>=<span class="string">"classpath:mapper/*.xml"</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line">   <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></div><div class="line"></div><div class="line">   <span class="comment">&lt;!--和交由spring动态代理 --&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">bean</span> <span class="attr">class</span>=<span class="string">"org.mybatis.spring.mapper.MapperScannerConfigurer"</span>&gt;</span></div><div class="line">	<span class="comment">&lt;!-- dao接口存放目录 --&gt;</span></div><div class="line">   		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"basePackage"</span> <span class="attr">value</span>=<span class="string">"dao包所在路径"</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line">   		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"sqlSessionFactoryBeanName"</span> <span class="attr">value</span>=<span class="string">"sqlSessionFactory"</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></div><div class="line"></div><div class="line">   <span class="comment">&lt;!--事务处理 --&gt;</span></div></pre></td></tr></table></figure></p>
+<p>springMvc的配置文件：spring-servlet.xml<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!-- 启用spring mvc 注解 --&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">context:annotation-config</span> /&gt;</span></div><div class="line"></div><div class="line">   <span class="comment">&lt;!-- 设置使用注解的类所在的jar包 --&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">context:component-scan</span> <span class="attr">base-package</span>=<span class="string">"controller"</span>&gt;</span><span class="tag">&lt;/<span class="name">context:component-scan</span>&gt;</span></div><div class="line"></div><div class="line">   <span class="comment">&lt;!-- 配置静态资源，直接映射到对应的文件夹，DispatcherServlet 不处理 --&gt;</span></div><div class="line">  	<span class="tag">&lt;<span class="name">mvc:resources</span> <span class="attr">mapping</span>=<span class="string">"/static/**"</span> <span class="attr">location</span>=<span class="string">"/WEB-INF/static/"</span> /&gt;</span></div><div class="line">  　　</div><div class="line">   <span class="comment">&lt;!-- 对转向页面的路径解析。prefix：前缀， suffix：后缀 --&gt;</span></div><div class="line">   <span class="comment">&lt;!-- 配置视图解析器 --&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">bean</span> <span class="attr">class</span>=<span class="string">"org.springframework.web.servlet.view.InternalResourceViewResolver"</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"prefix"</span> <span class="attr">value</span>=<span class="string">"/view/"</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"suffix"</span> <span class="attr">value</span>=<span class="string">".jsp"</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">bean</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>web.xml:<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!--spring的配置 --&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">listener</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">listener-class</span>&gt;</span>org.springframework.web.context.ContextLoaderListener<span class="tag">&lt;/<span class="name">listener-class</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">listener</span>&gt;</span></div><div class="line">  <span class="comment">&lt;!-- needed for ContextLoaderListener --&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">context-param</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">param-name</span>&gt;</span>contextConfigLocation<span class="tag">&lt;/<span class="name">param-name</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">param-value</span>&gt;</span>classpath:applicationContext.xml<span class="tag">&lt;/<span class="name">param-value</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">context-param</span>&gt;</span></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"><span class="comment">&lt;!-- Spring MVC 核心控制器 DispatcherServlet 配置 --&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">servlet</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>springDispatcherServlet<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">servlet-class</span>&gt;</span>org.springframework.web.servlet.DispatcherServlet<span class="tag">&lt;/<span class="name">servlet-class</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">init-param</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">param-name</span>&gt;</span>contextConfigLocation<span class="tag">&lt;/<span class="name">param-name</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">param-value</span>&gt;</span>classpath:spring-servlet.xml.xml<span class="tag">&lt;/<span class="name">param-value</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">init-param</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">load-on-startup</span>&gt;</span>1<span class="tag">&lt;/<span class="name">load-on-startup</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">servlet</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">servlet-mapping</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>springDispatcherServlet<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">servlet-mapping</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<h2 id="7-jquery-selector-“p-gt-a”-“p-a”-“p-a”-“p-a”-四者区别是什么"><a href="#7-jquery-selector-“p-gt-a”-“p-a”-“p-a”-“p-a”-四者区别是什么" class="headerlink" title="7.jquery selector $(“p &gt; a”), $(“p a”), $(“p + a”), $(“p ~ a”)四者区别是什么"></a>7.jquery selector $(“p &gt; a”), $(“p a”), $(“p + a”), $(“p ~ a”)四者区别是什么</h2><p>答：<br>    $(“p &gt; a”) ：匹配p标签下的<strong>子级</strong>a标签的对象<br><br>    $(“p a”) 匹配p标签下的<strong>所有</strong>a标签的对象<br><br>    $(“p + a”) 匹配所有跟在 p 后面的<strong>第一个</strong> a 元素<br><br>    $(“p ~ a”) 匹配所有跟在 p 后面的<strong>所有</strong> a 元素<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span> = <span class="string">"test-1.html"</span>&gt;</span>aaaa<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">"p"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span> = <span class="string">"test-2-1.html"</span>&gt;</span>bbbb<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span> = <span class="string">"test-2-2.html"</span>&gt;</span>bbbb<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span> = <span class="string">"test-2-3.html"</span>&gt;</span>bbbb<span class="tag">&lt;/<span class="name">a</span>&gt;</span> <span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span> = <span class="string">"test-2-4.html"</span>&gt;</span>bbbb<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span> = <span class="string">"test-3.html"</span>&gt;</span>aaaa<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span> = <span class="string">"test-4.html"</span>&gt;</span>aaaa<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>在控制台中分别执行$(“p &gt; a”), $(“p a”), $(“p + a”), $(“p ~ a”)就明白了</p>
+<h2 id="8-http-status-301-302-分别表示什么，用servlet如何分别返回"><a href="#8-http-status-301-302-分别表示什么，用servlet如何分别返回" class="headerlink" title="8.http status 301 302 分别表示什么，用servlet如何分别返回"></a>8.http status 301 302 分别表示什么，用servlet如何分别返回</h2><p>301：代表永久性转移。<br>302：代表暂时性转移。<br>servlet实现：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doGet</span><span class="params">(HttpServletRequest request, HttpServletResponse response)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</div><div class="line"></div><div class="line">  <span class="comment">//301</span></div><div class="line">  response.setStatus(HttpServletResponse.SC_MOVED_PERMANENTLY);  </div><div class="line">  response.setHeader(<span class="string">"Location"</span>,<span class="string">"http://www.baidu.com"</span>);</div><div class="line"></div><div class="line">  <span class="comment">//302</span></div><div class="line">  response.setStatus(HttpServletResponse.SC_MOVED_TEMPORARILY);  </div><div class="line">  response.setHeader(<span class="string">"Location"</span>,<span class="string">"http://www.baidu.com"</span>);  </div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h2 id="8-cat-1-egrep-t-t-tail-1-xargs-sed-‘s-s-1-‘-gt-dev-null-2-gt-amp-1解释下下这条命令的含义"><a href="#8-cat-1-egrep-t-t-tail-1-xargs-sed-‘s-s-1-‘-gt-dev-null-2-gt-amp-1解释下下这条命令的含义" class="headerlink" title="8.cat $(($$+1)) | egrep ^t.*\..*t$ | tail -1 | xargs sed ‘s/^/s-1/‘ &gt; /dev/null 2&gt;&amp;1解释下下这条命令的含义"></a>8.cat $(($$+1)) | egrep ^t.*\..*t$ | tail -1 | xargs sed ‘s/^/s-1/‘ &gt; /dev/null 2&gt;&amp;1解释下下这条命令的含义</h2><h2 id="9-关系数据多对多的实体关系如何设计，写一个-用户-角色-权限的模型，用DDL写出表结构并写出一条sql了显示所有用户的角色和权限"><a href="#9-关系数据多对多的实体关系如何设计，写一个-用户-角色-权限的模型，用DDL写出表结构并写出一条sql了显示所有用户的角色和权限" class="headerlink" title="9.关系数据多对多的实体关系如何设计，写一个 用户-角色-权限的模型，用DDL写出表结构并写出一条sql了显示所有用户的角色和权限"></a>9.关系数据多对多的实体关系如何设计，写一个 用户-角色-权限的模型，用DDL写出表结构并写出一条sql了显示所有用户的角色和权限</h2><p>多对多一般都是三张表来进行连接，其中一张为中间表<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">create</span> <span class="keyword">table</span> <span class="keyword">user</span>(<span class="keyword">id</span>  <span class="built_in">INT</span> primary <span class="keyword">key</span>,user_name <span class="built_in">varchar</span>(<span class="number">10</span>),pass <span class="built_in">varchar</span>(<span class="number">10</span>));</div><div class="line"><span class="keyword">create</span> <span class="keyword">table</span> Competence(<span class="keyword">id</span>  <span class="built_in">INT</span> primary <span class="keyword">key</span>,user_id <span class="built_in">int</span>,role_id <span class="built_in">int</span>);</div><div class="line"><span class="keyword">create</span> <span class="keyword">table</span> <span class="keyword">role</span>(<span class="keyword">id</span>  <span class="built_in">int</span> primary <span class="keyword">key</span>,role_name <span class="built_in">varchar</span>(<span class="number">10</span>));</div><div class="line"></div><div class="line"><span class="keyword">SELECT</span></div><div class="line">  u.user_name,</div><div class="line">  r.role_name</div><div class="line"><span class="keyword">FROM</span></div><div class="line">  competence c</div><div class="line">	<span class="keyword">left</span> <span class="keyword">join</span> <span class="keyword">user</span> u <span class="keyword">on</span> u.id = c.user_id</div><div class="line">	<span class="keyword">left</span> <span class="keyword">join</span> <span class="keyword">role</span> r <span class="keyword">on</span> c.role_id = r.id</div></pre></td></tr></table></figure></p>
+<h2 id="10-每天吃前一天的一半加一个吃到第十天还剩一个。第一天最开始有多少个？用程序实现"><a href="#10-每天吃前一天的一半加一个吃到第十天还剩一个。第一天最开始有多少个？用程序实现" class="headerlink" title="10.每天吃前一天的一半加一个吃到第十天还剩一个。第一天最开始有多少个？用程序实现"></a>10.每天吃前一天的一半加一个吃到第十天还剩一个。第一天最开始有多少个？用程序实现</h2><p>倒推回来：第一天的是第二天的加一的两倍<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">d1 = <span class="number">0</span>   <span class="comment">#第一天</span></div><div class="line">d2 = <span class="number">1</span>	  <span class="comment">#第二天</span></div><div class="line">i = <span class="number">9</span></div><div class="line"><span class="keyword">while</span>(i&gt;<span class="number">0</span>):</div><div class="line">	d1 = (d2+<span class="number">1</span>)*<span class="number">2</span>  <span class="comment">#第一天的是第二天的加一的两倍</span></div><div class="line">	d2 = d1    <span class="comment">#第一天变第二天的</span></div><div class="line">	i = i<span class="number">-1</span></div><div class="line">print(d1)on</div></pre></td></tr></table></figure></p>
+<p>1534</p>
+<h2 id="11-一个只有-name的表team-name分别为-a-b-c-d-四个球队-任意两个球队打比赛用-sql语言表示分别列出来对阵情况？"><a href="#11-一个只有-name的表team-name分别为-a-b-c-d-四个球队-任意两个球队打比赛用-sql语言表示分别列出来对阵情况？" class="headerlink" title="11.一个只有 name的表team,name分别为 a b c d 四个球队 任意两个球队打比赛用 sql语言表示分别列出来对阵情况？"></a>11.一个只有 name的表team,name分别为 a b c d 四个球队 任意两个球队打比赛用 sql语言表示分别列出来对阵情况？</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">select</span></div><div class="line">	a.name <span class="keyword">as</span> 主队，</div><div class="line">	b.name <span class="keyword">as</span> 客队</div><div class="line"><span class="keyword">FROM</span></div><div class="line">	team a,</div><div class="line">	team b</div><div class="line"><span class="keyword">WHERE</span></div><div class="line">	a.name &gt; b.name;</div></pre></td></tr></table></figure>
+<p><img src="/img/mians-1.png" alt="查询结果"></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">select</span></div><div class="line">	a.name <span class="keyword">as</span> 主队，</div><div class="line">	b.name <span class="keyword">as</span> 客队</div><div class="line"><span class="keyword">FROM</span></div><div class="line">	team a,</div><div class="line">	team b</div><div class="line"><span class="keyword">WHERE</span></div><div class="line">	a.name &lt;&gt; b.name;</div></pre></td></tr></table></figure>
+<p><img src="/img/mians-2.png" alt="查询结果"></p>
+<p>原来sql可以同时查询两张一样的表。。。。。。</p>
+
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+
+
+
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2016/07/10/springMVC4-tiles3整合/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2016/06/19/sprin注释bean名头字母大小写的问题/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/v.png" alt="zrui's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        zruihao68@gmail.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="https://zruihao68@gmail.com" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/" target="_self">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2016/11/">十一月 2016<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/07/">七月 2016<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/06/">六月 2016<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/01/">一月 2016<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2015/10/">十月 2015<span class="sidebar_archives-count">8</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+
+    <!-- Pages  -->
+    
+
+    <!-- Article Number  -->
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+            主题 - Material
+            <span class="sidebar-badge badge-circle">i</span>
+        </div>
+    </a>
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/twitter" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-twitter.png);">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+        <a href="https://www.facebook.com/zhourui" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-facebook.png);">
+                <span class="visuallyhidden">Facebook</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Google + -->
+    
+        <a href="https://www.google.com/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-gplus.png);">
+                <span class="visuallyhidden">Google Plus</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/zruihao68" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-github.png);">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+        <a href="https://www.zhihu.com/people/zrui-34/activities" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-zhihu.png);">
+                <span class="visuallyhidden">Zhihu</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+        <a href="https://telegram.me/zhourui" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-telegram.png);">
+                <span class="visuallyhidden">Telegram</span>
+            </button><!--
+     --></a>
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;
+            <script type="text/javascript">
+                var fd = new Date();
+                document.write(fd.getFullYear());
+            </script>
+            &nbsp;zrui Blog
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import File -->
+<script src="/js/lazyload.min.js"></script>
+<script src="/js/js.min.js"></script>
+<script src="/js/nprogress.js"></script>
+
+<script type="text/javascript">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Swiftye -->
+
+
+<!-- Local Search-->
+
+
+<!-- Window Load-->
+<script>
+    $(window).load(function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+</script>
+
+<!-- MathJax Load-->
+
+
+                </main>
+            </div>
+        </body>
+    
+</html>
